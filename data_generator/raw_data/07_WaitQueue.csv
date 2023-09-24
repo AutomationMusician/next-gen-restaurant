@@ -1,0 +1,5 @@
+id,restaurant_id,type
+1,1,'walk-in'
+2,1,'reservation'
+3,2,'walk-in'
+4,2,'reservation'

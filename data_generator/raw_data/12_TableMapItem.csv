@@ -1,0 +1,4 @@
+restaurant_id,map_name,table_name,x_location,y_location,rotation
+1,'Weekday Layout A','Booth 1',0,0,90
+1,'Weekday Layout A','Booth 2',2,0,90
+1,'Weekday Layout A','Floor 1',1,5,0

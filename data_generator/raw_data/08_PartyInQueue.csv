@@ -1,0 +1,3 @@
+id,wait_queue_id,phone_number,party_size,priority,status
+1,1,'+18148654700',1,1,'completed'
+2,1,'+16106483200',5,2,'waiting'

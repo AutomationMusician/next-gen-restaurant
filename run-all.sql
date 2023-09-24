@@ -1,3 +1,3 @@
 @delete-tables.sql
 @create-tables.sql
-@insert-data.sql
+@data_generator/output.sql
