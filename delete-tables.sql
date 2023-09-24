@@ -1,4 +1,6 @@
 
+DROP TABLE RestaurantOrder;
+DROP TABLE Reservation;
 DROP TABLE TableMapItem;
 DROP TABLE TableMap;
 DROP TABLE RestaurantTable;
