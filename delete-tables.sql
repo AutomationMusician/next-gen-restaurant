@@ -1,4 +1,8 @@
 
+DROP TABLE CreditCardTransaction;
+DROP TABLE GiftCardTransaction;
+DROP TABLE Transaction;
+DROP TABLE OrderItem;
 DROP TABLE RestaurantOrder;
 DROP TABLE Reservation;
 DROP TABLE TableMapItem;

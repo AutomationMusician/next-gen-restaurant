@@ -18,7 +18,7 @@ async function main() {
         output.push('');
     };
 
-    await fs.writeFile(__dirname + "/output.sql", output.join('\n'));
+    await fs.writeFile(__dirname + "/insert-data.sql", output.join('\n'));
 }
 
 function getTableName(filename)

@@ -135,4 +135,56 @@ CREATE TABLE RestaurantOrder (
     CONSTRAINT fk_order_table FOREIGN KEY (restaurant_id, table_name) REFERENCES RestaurantTable (restaurant_id, name)
 );
 
+CREATE TABLE OrderItem (
+    id INTEGER NOT NULL,
+    order_id INTEGER NOT NULL,
+    menu_item_id INTEGER NOT NULL,
+    customer_id VARCHAR2(20),
+    quantity INTEGER NOT NULL,
+    notes VARCHAR2(1024),
+    status VARCHAR2(8),
+    CONSTRAINT pk_order_item PRIMARY KEY (id),
+    CONSTRAINT fk_order_item_order_id FOREIGN KEY (order_id) REFERENCES RestaurantOrder (id),
+    CONSTRAINT fk_order_item_menu_item_id FOREIGN KEY (menu_item_id) REFERENCES MenuItem (id),
+    CONSTRAINT fk_order_item_customer_id FOREIGN KEY (customer_id) REFERENCES CustomerIdentification (id_number),
+    CONSTRAINT pos_order_quantity CHECK (quantity > 0),
+    CONSTRAINT enum_order_item_status CHECK (status IN ('placed', 'ready', 'served'))
+);
 
+CREATE TABLE Transaction (
+    id INTEGER NOT NULL,
+    order_id INTEGER NOT NULL,
+    amount INTEGER NOT NULL,
+    transaction_type VARCHAR2(10) NOT NULL,
+    status VARCHAR2(12) NOT NULL,
+    CONSTRAINT pk_transaction PRIMARY KEY (id),
+    CONSTRAINT fk_transaction_order_id FOREIGN KEY (order_id) REFERENCES RestaurantOrder (id),
+    CONSTRAINT pos_trans_amount CHECK (amount > 0),
+    CONSTRAINT enum_transaction_type CHECK (transaction_type IN ('gift_card', 'cash', 'credit')),
+    CONSTRAINT enum_transaction_status CHECK (status IN ('unpaid', 'pre-approved', 'paid'))
+);
+
+CREATE TABLE GiftCardTransaction (
+    id INTEGER NOT NULL,
+    gift_card_number NUMBER(16) NOT NULL,
+    expiration_month INTEGER NOT NULL,
+    expiration_year INTEGER NOT NULL,
+    CONSTRAINT pk_gift_trans PRIMARY KEY (id),
+    CONSTRAINT fk_gift_trans_id FOREIGN KEY (id) REFERENCES Transaction (id),
+    CONSTRAINT gift_exp_month_range CHECK (expiration_month BETWEEN 1 AND 12)
+);
+
+CREATE TABLE CreditCardTransaction (
+    id INTEGER NOT NULL,
+    credit_card_number NUMBER(16) NOT NULL,
+    name_on_card VARCHAR2(64) NOT NULL,
+    expiration_month INTEGER NOT NULL,
+    expiration_year INTEGER NOT NULL,
+    cvv INTEGER NOT NULL,
+    gratuity_amount INTEGER NOT NULL,
+    CONSTRAINT pk_credit_trans PRIMARY KEY (id),
+    CONSTRAINT fk_credit_trans_id FOREIGN KEY (id) REFERENCES Transaction (id),
+    CONSTRAINT credit_exp_month_range CHECK (expiration_month BETWEEN 1 AND 12),
+    CONSTRAINT credit_cvv_range CHECK (cvv BETWEEN 0 and 999),
+    CONSTRAINT gratuity_amount_range CHECK (gratuity_amount >= 0)
+);

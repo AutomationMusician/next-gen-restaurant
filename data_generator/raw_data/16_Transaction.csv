@@ -1,0 +1,5 @@
+id,order_id,amount,transaction_type,status
+1,1,30000,'credit','pre-approved',
+2,2,30000,'credit','pre-approved',
+3,3,6095,'gift_card','paid'
+4,1,1598,'gift_card','unpaid'
