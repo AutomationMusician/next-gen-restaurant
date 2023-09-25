@@ -9,7 +9,7 @@ async function main() {
     {
         const filename = raw_data_contents[i];
         const tableName = getTableName(filename);
-        const lines = (await fs.readFile(__dirname + "/raw_data/" + filename)).toString().split("\n");
+        const lines = (await fs.readFile(__dirname + "/raw_data/" + filename)).toString().split(/\r?\n/g);
         const header = `INSERT INTO ${tableName} (${lines[0]}) VALUES`;
         for (let j=1; j<lines.length; j++)
         {
