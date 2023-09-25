@@ -38,6 +38,3 @@ id,wait_queue_id,phone_number,party_size,priority,status
 37,8,'+16100000038',9,37,'completed'
 38,8,'+16100000039',4,38,'completed'
 39,8,'+16100000040',6,39,'completed'
-40,8,'+16100000041',3,40,'completed'
-41,9,'+16100000042',5,41,'completed'
-42,9,'+16100000043',3,42,'completed'

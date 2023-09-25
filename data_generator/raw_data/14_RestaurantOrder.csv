@@ -3,3 +3,39 @@ id,restaurant_id,server_id,table_name
 2,1,1,NULL
 3,1,2,'Booth 1'
 4,1,2,'Booth 2'
+5,2,3,NULL
+6,2,3,NULL
+7,2,4,'Booth 1'
+8,2,4,'Booth 2'
+9,3,5,NULL
+10,3,5,NULL
+11,3,6,'Booth 1'
+12,3,6,'Booth 2'
+13,4,7,NULL
+14,4,7,NULL
+15,4,8,'Booth 1'
+16,4,8,'Booth 2'
+17,5,9,NULL
+18,5,9,NULL
+19,5,10,'Booth 1'
+20,5,10,'Booth 2'
+21,6,11,NULL
+22,6,11,NULL
+23,6,12,'Booth 1'
+24,6,12,'Booth 2'
+25,7,13,NULL
+26,7,13,NULL
+27,7,14,'Booth 1'
+28,7,14,'Booth 2'
+29,8,15,NULL
+30,8,15,NULL
+31,8,16,'Booth 1'
+32,8,16,'Booth 2'
+33,9,17,NULL
+34,9,17,NULL
+35,9,18,'Booth 1'
+36,9,18,'Booth 2'
+37,10,19,NULL
+38,10,19,NULL
+39,10,20,'Booth 1'
+40,10,20,'Booth 2'

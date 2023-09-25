@@ -1,6 +1,6 @@
 id,name,description,price,contains_alcohol
-1,'Deluxe Bacon Cheeseburger',"'Fresh beef patties, two strips of crisp bacon, smoked American cheese, fresh romaine, tomatoes, Pittsburgh pickles, onion, mayo on a buttery bun.'",1499,'N'
-2,'Corona',"'Corona Beer, imported from the fridge'",799,'Y'
+1,'Deluxe Bacon Cheeseburger',"'Fresh beef patties, two strips of crisp bacon, smoked American cheese, fresh romaine, tomatoes, Pittsburgh pickles, onion, mayo on a buttery bun.'",1500,'N'
+2,'Corona',"'Corona Beer, imported from the fridge'",800,'Y'
 3,'Classic Omelette','Classic Omelette',850,'N'
 4,'Western Omelette','Western Omelette',100,'N'
 5,'Mexican Omelette','Mexican Omelette',101,'N'
