@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="OFFEREDITEMS" directorySegmentName="seg_0" id="BDBAE8ED-1D31-4493-851B-379FD832856B">
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-09-26 01:17:33 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<schemaObject>5A85C4EB-79EC-4419-1261-69C6A4ECAA94</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>F5339CF9-1811-EE20-395A-C4159D5BB1A9</segment>
+<tableSpace>923C4FCD-B4E0-3021-337C-65A512B0BE3E</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="RESTAURANT_ID" id="458A86E2-662D-C271-BDC6-D83F1C0A5242">
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-09-26 01:17:33 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MENU_ITEM_ID" id="C9A0DBD6-C234-37B2-39D5-603BE8C89BF1">
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-09-26 01:17:33 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_OFFERED_ITEMS" id="01496C62-0C32-2357-0C7F-BD16CEC9D387">
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-09-26 01:17:33 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<schemaObject>5A85C4EB-79EC-4419-1261-69C6A4ECAA94</schemaObject>
+<segment>BB684B6D-FBBA-DD34-07C6-CB059D04C199</segment>
+<tableSpace>923C4FCD-B4E0-3021-337C-65A512B0BE3E</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_OFFERED_ITEM_RESTAURANT" id="0D6977D5-BFF4-173C-3C29-0E4A535A6444">
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-09-26 01:17:33 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_OFFERED_ITEM_MENU_ITEM" id="37498DCE-4319-2E5B-8C62-B954C79B38DE">
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-09-26 01:17:33 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_OFFERED_ITEMS" id="6FC16E8B-C2F5-0797-343C-249B1B2F9C56">
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-09-26 01:17:33 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<segment>BB684B6D-FBBA-DD34-07C6-CB059D04C199</segment>
+<tableSpace>923C4FCD-B4E0-3021-337C-65A512B0BE3E</tableSpace>
+<existingIndex>01496C62-0C32-2357-0C7F-BD16CEC9D387</existingIndex>
+<indexSegment>BB684B6D-FBBA-DD34-07C6-CB059D04C199</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

@@ -1,0 +1,146 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9598B3C4-9966-8ACB-3B78-34526DA873C0" schemaObject="5A85C4EB-79EC-4419-1261-69C6A4ECAA94" name="TRANSACTION">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>TRANSACTION</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-09-26 01:32:52 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="6A954CFE-4238-4BAD-ACC9-93F0FFC6625C">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>TRANSACTION</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-09-26 01:32:52 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ORDER_ID" id="87F7C10D-87D5-E1C1-C54B-EE58F0002629">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>TRANSACTION</sourceObjSchema>
+<sourceObjName>ORDER_ID</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-09-26 01:32:52 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="45AE825A-E00D-4352-76C1-E7AABD715DA8" referredColumn="4983E067-A084-B936-3D65-60F89EFBBFCB"/>
+</associations>
+</Column>
+<Column name="AMOUNT" id="E588B566-37A9-4E9D-085F-67681B098E84">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>TRANSACTION</sourceObjSchema>
+<sourceObjName>AMOUNT</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-09-26 01:32:52 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<constraintName>POS_TRANS_AMOUNT</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="amount &gt; 0"/>
+<implementationDef dbType="Oracle Database 11g" definition="amount &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TRANSACTION_TYPE" id="2D50116B-E762-8F6D-10D7-BDFD0445FF9C">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>TRANSACTION</sourceObjSchema>
+<sourceObjName>TRANSACTION_TYPE</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-09-26 01:32:52 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<constraintName>ENUM_TRANSACTION_TYPE</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;cash&apos;" description=""/>
+<valueDef value="&apos;credit&apos;" description=""/>
+<valueDef value="&apos;gift_card&apos;" description=""/>
+</listOfValues>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STATUS" id="B65E7444-5FEB-7CF8-DDCA-E444ED8FA09A">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>TRANSACTION</sourceObjSchema>
+<sourceObjName>STATUS</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-09-26 01:32:52 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<constraintName>ENUM_TRANSACTION_STATUS</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;paid&apos;" description=""/>
+<valueDef value="&apos;pre-approved&apos;" description=""/>
+<valueDef value="&apos;unpaid&apos;" description=""/>
+</listOfValues>
+<ownDataTypeParameters>12 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="83740921-DE22-172D-4C19-3402F2BAE889" name="PK_TRANSACTION">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>PK_TRANSACTION</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-09-26 01:32:52 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6A954CFE-4238-4BAD-ACC9-93F0FFC6625C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="06574BD4-367E-5AE1-ACA2-4D112198C246" schemaObject="5A85C4EB-79EC-4419-1261-69C6A4ECAA94" name="PK_TRANSACTION">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>PK_TRANSACTION</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-09-26 01:32:52 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6A954CFE-4238-4BAD-ACC9-93F0FFC6625C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1E52241B-AC36-3497-86E2-97B13A0E2C33" name="FK_TRANSACTION_ORDER_ID">
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-09-26 01:32:52 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="87F7C10D-87D5-E1C1-C54B-EE58F0002629"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

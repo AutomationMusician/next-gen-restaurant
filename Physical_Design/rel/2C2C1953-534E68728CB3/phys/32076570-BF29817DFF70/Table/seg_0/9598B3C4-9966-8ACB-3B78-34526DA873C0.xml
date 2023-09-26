@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="TRANSACTION" directorySegmentName="seg_0" id="9598B3C4-9966-8ACB-3B78-34526DA873C0">
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-09-26 01:32:52 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<schemaObject>5A85C4EB-79EC-4419-1261-69C6A4ECAA94</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>F5339CF9-1811-EE20-395A-C4159D5BB1A9</segment>
+<tableSpace>923C4FCD-B4E0-3021-337C-65A512B0BE3E</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="TRANSACTION_TYPE" id="2D50116B-E762-8F6D-10D7-BDFD0445FF9C">
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-09-26 01:32:52 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID" id="6A954CFE-4238-4BAD-ACC9-93F0FFC6625C">
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-09-26 01:32:52 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ORDER_ID" id="87F7C10D-87D5-E1C1-C54B-EE58F0002629">
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-09-26 01:32:52 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="STATUS" id="B65E7444-5FEB-7CF8-DDCA-E444ED8FA09A">
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-09-26 01:32:52 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AMOUNT" id="E588B566-37A9-4E9D-085F-67681B098E84">
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-09-26 01:32:52 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_TRANSACTION" id="06574BD4-367E-5AE1-ACA2-4D112198C246">
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-09-26 01:32:52 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<schemaObject>5A85C4EB-79EC-4419-1261-69C6A4ECAA94</schemaObject>
+<segment>BB684B6D-FBBA-DD34-07C6-CB059D04C199</segment>
+<tableSpace>923C4FCD-B4E0-3021-337C-65A512B0BE3E</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_TRANSACTION_ORDER_ID" id="1E52241B-AC36-3497-86E2-97B13A0E2C33">
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-09-26 01:32:52 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_TRANSACTION" id="83740921-DE22-172D-4C19-3402F2BAE889">
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-09-26 01:32:52 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<segment>BB684B6D-FBBA-DD34-07C6-CB059D04C199</segment>
+<tableSpace>923C4FCD-B4E0-3021-337C-65A512B0BE3E</tableSpace>
+<existingIndex>06574BD4-367E-5AE1-ACA2-4D112198C246</existingIndex>
+<indexSegment>BB684B6D-FBBA-DD34-07C6-CB059D04C199</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

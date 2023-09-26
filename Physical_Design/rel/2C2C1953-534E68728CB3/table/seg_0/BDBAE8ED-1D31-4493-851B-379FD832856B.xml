@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BDBAE8ED-1D31-4493-851B-379FD832856B" schemaObject="5A85C4EB-79EC-4419-1261-69C6A4ECAA94" name="OFFEREDITEMS">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>OFFEREDITEMS</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-09-26 01:17:33 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="RESTAURANT_ID" id="458A86E2-662D-C271-BDC6-D83F1C0A5242">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>OFFEREDITEMS</sourceObjSchema>
+<sourceObjName>RESTAURANT_ID</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-09-26 01:17:33 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="25752CEC-77B9-9E7C-9B35-09177C254743" referredColumn="21099D92-C9ED-4E47-3B6F-3A03BF7FEF8A"/>
+</associations>
+</Column>
+<Column name="MENU_ITEM_ID" id="C9A0DBD6-C234-37B2-39D5-603BE8C89BF1">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>OFFEREDITEMS</sourceObjSchema>
+<sourceObjName>MENU_ITEM_ID</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-09-26 01:17:33 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A7E0936C-D668-00B2-7CD8-E44F53C0E4E0" referredColumn="75D4DF0B-3E92-F9CB-7370-BB365E23476D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6FC16E8B-C2F5-0797-343C-249B1B2F9C56" name="PK_OFFERED_ITEMS">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>PK_OFFERED_ITEMS</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-09-26 01:17:33 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="458A86E2-662D-C271-BDC6-D83F1C0A5242"/>
+<colUsage columnID="C9A0DBD6-C234-37B2-39D5-603BE8C89BF1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="01496C62-0C32-2357-0C7F-BD16CEC9D387" schemaObject="5A85C4EB-79EC-4419-1261-69C6A4ECAA94" name="PK_OFFERED_ITEMS">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>PK_OFFERED_ITEMS</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-09-26 01:17:33 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="458A86E2-662D-C271-BDC6-D83F1C0A5242"/>
+<colUsage columnID="C9A0DBD6-C234-37B2-39D5-603BE8C89BF1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="37498DCE-4319-2E5B-8C62-B954C79B38DE" name="FK_OFFERED_ITEM_MENU_ITEM">
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-09-26 01:17:33 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C9A0DBD6-C234-37B2-39D5-603BE8C89BF1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0D6977D5-BFF4-173C-3C29-0E4A535A6444" name="FK_OFFERED_ITEM_RESTAURANT">
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-09-26 01:17:33 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="458A86E2-662D-C271-BDC6-D83F1C0A5242"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
