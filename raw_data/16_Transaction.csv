@@ -1,11 +1,11 @@
 id,order_id,amount,transaction_type,status
 1,1,30000,'credit','pre-approved'
-2,2,30000,'credit','pre-approved'
+2,2,3800,'credit','paid'
 3,3,3800,'gift_card','unpaid'
 4,4,2000,'gift_card','paid'
 5,4,1800,'cash','paid'
 6,5,30000,'credit','pre-approved'
-7,6,30000,'credit','pre-approved'
+7,6,3800,'credit','paid'
 8,7,3800,'gift_card','unpaid'
 9,8,2000,'gift_card','paid'
 10,8,1800,'cash','paid'

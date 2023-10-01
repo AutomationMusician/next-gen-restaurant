@@ -87,10 +87,12 @@ CREATE TABLE RestaurantTable (
     name VARCHAR(32) NOT NULL,
     width FLOAT NOT NULL,
     length FLOAT NOT NULL,
+    occupancy INTEGER NOT NULL,
     CONSTRAINT pk_table PRIMARY KEY (restaurant_id, name),
     CONSTRAINT fk_restaurant_table_restaurant FOREIGN KEY (restaurant_id) REFERENCES Restaurant (id),
     CONSTRAINT pos_width CHECK (width > 0),
-    CONSTRAINT pos_length CHECK (length > 0)
+    CONSTRAINT pos_length CHECK (length > 0),
+    CONSTRAINT pos_occupancy CHECK (occupancy > 0)
 );
 
 
@@ -120,6 +122,7 @@ CREATE TABLE Reservation (
     reservation_date_time DATE NOT NULL,
     customer_phone_number VARCHAR2(20) NOT NULL,
     CONSTRAINT pk_reserve PRIMARY KEY (restaurant_id, table_name, reservation_date_time),
+    CONSTRAINT fk_reserve_restrauant_id FOREIGN KEY (restaurant_id) REFERENCES Restaurant (id),
     CONSTRAINT fk_reserve_restrauant_table FOREIGN KEY (restaurant_id, table_name) REFERENCES RestaurantTable (restaurant_id, name),
     CONSTRAINT fk_reserve_phone_number FOREIGN KEY (customer_phone_number) REFERENCES CustomerContactInfo (phone_number)
 );
