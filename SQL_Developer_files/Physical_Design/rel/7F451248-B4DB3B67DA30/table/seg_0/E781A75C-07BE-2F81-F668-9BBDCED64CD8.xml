@@ -1,0 +1,148 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E781A75C-07BE-2F81-F668-9BBDCED64CD8" schemaObject="2BEDCAEA-DB4C-2A97-5DE1-DDB109EF3B56" name="RESTAURANT">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>RESTAURANT</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 17:35:02 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<importedID>12E71487-58DF-CA8F-932A-8F4CBBE9C527</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="0FFCA45A-337A-5694-2545-B395B7A20BAF">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>RESTAURANT</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 17:35:02 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<importedID>21099D92-C9ED-4E47-3B6F-3A03BF7FEF8A</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PHONE_NUMBER" id="8F824F0D-22F6-88AD-7CEB-F299C43F15F4">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>RESTAURANT</sourceObjSchema>
+<sourceObjName>PHONE_NUMBER</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 17:35:02 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<importedID>EF6C13A2-CB6D-049F-966A-04813A06A7BB</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ADDRESS" id="5FE0CC2E-1504-E34A-0B23-5EE6A1B1A30D">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>RESTAURANT</sourceObjSchema>
+<sourceObjName>ADDRESS</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 17:35:02 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<importedID>38494319-4AEA-F98A-E784-30C69A6029BA</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128 BYTE</dataTypeSize>
+<ownDataTypeParameters>128 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E3E8423B-C6A6-DFF0-40C2-E089D935D5E2" name="PK_RESTAURANT">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>PK_RESTAURANT</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 17:35:02 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<importedID>95D6D08A-48B1-1239-CB23-4C2578DEE9BD</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0FFCA45A-337A-5694-2545-B395B7A20BAF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C9FC5891-E24D-9AB2-DE05-371F9356310F" name="U_ADDRESS">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>U_ADDRESS</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 17:35:02 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<importedID>9689CC6B-9AA6-C957-3495-FD4119D6C286</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5FE0CC2E-1504-E34A-0B23-5EE6A1B1A30D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="08F37B23-BEDB-91F5-7DB5-AF917259B259" name="U_PHONE">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>U_PHONE</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 17:35:02 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<importedID>F968C4D8-5B7F-4806-C30A-FE5289D07EA4</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8F824F0D-22F6-88AD-7CEB-F299C43F15F4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="35DC3DE0-DD38-5E60-C2E8-D0350E161FDC" schemaObject="2BEDCAEA-DB4C-2A97-5DE1-DDB109EF3B56" name="PK_RESTAURANT">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>PK_RESTAURANT</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 17:35:02 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<importedID>7C4EA6F8-C63D-1D57-E660-07438F99E109</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0FFCA45A-337A-5694-2545-B395B7A20BAF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E2DE2DE7-9863-DB6C-A665-E6654EDF944A" schemaObject="2BEDCAEA-DB4C-2A97-5DE1-DDB109EF3B56" name="U_ADDRESS">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>U_ADDRESS</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 17:35:02 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<importedID>E998959A-56BC-6B2C-C966-2B85CB62E51C</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5FE0CC2E-1504-E34A-0B23-5EE6A1B1A30D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="88D1472C-9AD5-102E-9CDE-227246F40FD7" schemaObject="2BEDCAEA-DB4C-2A97-5DE1-DDB109EF3B56" name="U_PHONE">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>U_PHONE</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 17:35:02 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<importedID>7B915B55-232E-C79C-9C6E-E5E3A16D207F</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8F824F0D-22F6-88AD-7CEB-F299C43F15F4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

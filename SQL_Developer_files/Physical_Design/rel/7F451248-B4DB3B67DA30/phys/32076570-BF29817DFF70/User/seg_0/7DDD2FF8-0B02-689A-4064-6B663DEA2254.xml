@@ -1,0 +1,11 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<UserOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" name="STUDENT" directorySegmentName="seg_0" id="7DDD2FF8-0B02-689A-4064-6B663DEA2254">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjName>STUDENT</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 23:13:04 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<schemaObject>2BEDCAEA-DB4C-2A97-5DE1-DDB109EF3B56</schemaObject>
+<defTableSpace>2CF33842-BDA1-50F2-4820-29E6918187C0</defTableSpace>
+<privileges>UNLIMITED TABLESPACE, CREATE SESSION</privileges>
+</UserOraclev10g>

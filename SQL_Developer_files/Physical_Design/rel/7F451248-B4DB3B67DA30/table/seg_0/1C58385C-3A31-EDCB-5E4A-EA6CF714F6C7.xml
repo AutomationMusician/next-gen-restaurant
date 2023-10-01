@@ -1,0 +1,145 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1C58385C-3A31-EDCB-5E4A-EA6CF714F6C7" schemaObject="2BEDCAEA-DB4C-2A97-5DE1-DDB109EF3B56" name="RESERVATION">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>RESERVATION</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 23:13:05 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="RESTAURANT_ID" id="196DED79-4C5A-903E-185A-91ED1EED2023">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>RESERVATION</sourceObjSchema>
+<sourceObjName>RESTAURANT_ID</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 23:13:05 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A3AD6B98-25B4-47FC-1F32-EFB76E4521E0" referredColumn="0FFCA45A-337A-5694-2545-B395B7A20BAF"/>
+<colAssociation fkAssociation="22CB0F36-700D-9528-8EF3-AF52C664AC15" referredColumn="BB7917E6-DF65-21DD-2B17-1C65E7569F5C"/>
+</associations>
+</Column>
+<Column name="TABLE_NAME" id="1B3B823E-7649-61D1-4D87-E5532F94D9F1">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>RESERVATION</sourceObjSchema>
+<sourceObjName>TABLE_NAME</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 23:13:05 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 BYTE</dataTypeSize>
+<ownDataTypeParameters>32 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="22CB0F36-700D-9528-8EF3-AF52C664AC15" referredColumn="7ECBD228-AA4B-CCD1-6C00-7FECE74D50E7"/>
+</associations>
+</Column>
+<Column name="RESERVATION_DATE_TIME" id="6AEB64BC-602E-272F-F41B-577747D0DD3A">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>RESERVATION</sourceObjSchema>
+<sourceObjName>RESERVATION_DATE_TIME</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 23:13:05 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CUSTOMER_PHONE_NUMBER" id="0B3C84D1-012B-287D-1519-8EE745B22EDD">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>RESERVATION</sourceObjSchema>
+<sourceObjName>CUSTOMER_PHONE_NUMBER</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 23:13:05 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7B09AB9D-4D1C-2065-F8A3-62725B6EDB6C" referredColumn="C2DD2AEE-54A3-DE94-31C8-6028AFEC81C1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="33384723-8507-CC2C-A7DC-D0AB9D7E5847" name="PK_RESERVE">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>PK_RESERVE</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 23:13:05 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="196DED79-4C5A-903E-185A-91ED1EED2023"/>
+<colUsage columnID="1B3B823E-7649-61D1-4D87-E5532F94D9F1"/>
+<colUsage columnID="6AEB64BC-602E-272F-F41B-577747D0DD3A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F063B44C-52AB-0902-6854-F58006D9BF07" schemaObject="2BEDCAEA-DB4C-2A97-5DE1-DDB109EF3B56" name="PK_RESERVE">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>PK_RESERVE</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 23:13:05 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="196DED79-4C5A-903E-185A-91ED1EED2023"/>
+<colUsage columnID="1B3B823E-7649-61D1-4D87-E5532F94D9F1"/>
+<colUsage columnID="6AEB64BC-602E-272F-F41B-577747D0DD3A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1460F738-EE04-9DA9-547C-B5F880A809F4" name="FK_RESERVE_PHONE_NUMBER">
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 23:13:06 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0B3C84D1-012B-287D-1519-8EE745B22EDD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="83C7862D-33B6-0F96-967A-86EFDDFBC39A" name="FK_RESERVE_RESTRAUANT_ID">
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 23:13:06 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="196DED79-4C5A-903E-185A-91ED1EED2023"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4F24904E-E2FF-6D89-AE5A-A93A327C7AED" name="FK_RESERVE_RESTRAUANT_TABLE">
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 23:13:06 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="196DED79-4C5A-903E-185A-91ED1EED2023"/>
+<colUsage columnID="1B3B823E-7649-61D1-4D87-E5532F94D9F1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

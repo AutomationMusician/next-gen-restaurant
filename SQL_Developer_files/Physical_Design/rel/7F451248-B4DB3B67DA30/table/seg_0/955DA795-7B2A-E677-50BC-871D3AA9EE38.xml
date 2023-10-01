@@ -1,0 +1,145 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="955DA795-7B2A-E677-50BC-871D3AA9EE38" schemaObject="2BEDCAEA-DB4C-2A97-5DE1-DDB109EF3B56" name="RESTAURANTTABLE">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>RESTAURANTTABLE</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 23:14:36 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="RESTAURANT_ID" id="864F228E-1394-FA11-B641-770265DDA279">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>RESTAURANTTABLE</sourceObjSchema>
+<sourceObjName>RESTAURANT_ID</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 23:14:37 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="27A92A1F-4A7C-EB5A-F996-13EEFA23D58E" referredColumn="0FFCA45A-337A-5694-2545-B395B7A20BAF"/>
+</associations>
+</Column>
+<Column name="NAME" id="8BF4B23F-9244-4159-1BD9-2F9240FE1195">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>RESTAURANTTABLE</sourceObjSchema>
+<sourceObjName>NAME</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 23:14:37 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 BYTE</dataTypeSize>
+<ownDataTypeParameters>32 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="WIDTH" id="19872242-6DAE-4C0A-C069-7D9892BCDAAB">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>RESTAURANTTABLE</sourceObjSchema>
+<sourceObjName>WIDTH</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 23:14:37 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<constraintName>POS_WIDTH</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>126</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="width &gt; 0"/>
+<implementationDef dbType="Oracle Database 11g" definition="width &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,126,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LENGTH" id="FB0DE98F-903A-91A5-8064-7345AEA11F51">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>RESTAURANTTABLE</sourceObjSchema>
+<sourceObjName>LENGTH</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 23:14:37 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<constraintName>POS_LENGTH</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>126</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length &gt; 0"/>
+<implementationDef dbType="Oracle Database 11g" definition="length &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,126,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OCCUPANCY" id="2CAC929A-CA38-8CF0-26A3-B89062DB5B42">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>RESTAURANTTABLE</sourceObjSchema>
+<sourceObjName>OCCUPANCY</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 23:14:37 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<constraintName>POS_OCCUPANCY</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="occupancy &gt; 0"/>
+<implementationDef dbType="Oracle Database 11g" definition="occupancy &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4E6EDBFC-5112-2EAE-EC29-D20C853FA023" name="PK_TABLE">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>PK_TABLE</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 23:14:37 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="864F228E-1394-FA11-B641-770265DDA279"/>
+<colUsage columnID="8BF4B23F-9244-4159-1BD9-2F9240FE1195"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B69A0926-82A1-AC27-78A8-687AAD0E5B28" schemaObject="2BEDCAEA-DB4C-2A97-5DE1-DDB109EF3B56" name="PK_TABLE">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>PK_TABLE</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 23:14:37 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="864F228E-1394-FA11-B641-770265DDA279"/>
+<colUsage columnID="8BF4B23F-9244-4159-1BD9-2F9240FE1195"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D24E2D69-2769-6A29-4BEB-7D06E7A103F2" name="FK_RESTAURANT_TABLE_RESTAURANT">
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 23:14:37 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="864F228E-1394-FA11-B641-770265DDA279"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

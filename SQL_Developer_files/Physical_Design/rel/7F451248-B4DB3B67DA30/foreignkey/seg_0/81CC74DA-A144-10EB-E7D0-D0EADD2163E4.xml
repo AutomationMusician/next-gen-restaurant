@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="81CC74DA-A144-10EB-E7D0-D0EADD2163E4" containerWithKeyObject="23489F89-AB35-9D3A-3048-12FB6319E4F6" localFKIndex="C238338A-4E29-18E0-5651-DF4BB86A077F" name="FK_MAP_ITEM_RESTRAUANT_TABLE">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>FK_MAP_ITEM_RESTRAUANT_TABLE</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 23:18:06 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<referredTableLongName>STUDENT.RESTAURANTTABLE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>955DA795-7B2A-E677-50BC-871D3AA9EE38</referredTableID>
+<keyObject>B69A0926-82A1-AC27-78A8-687AAD0E5B28</keyObject>
+<referredKeyID>B69A0926-82A1-AC27-78A8-687AAD0E5B28</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>RESTAURANT_ID,NAME</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

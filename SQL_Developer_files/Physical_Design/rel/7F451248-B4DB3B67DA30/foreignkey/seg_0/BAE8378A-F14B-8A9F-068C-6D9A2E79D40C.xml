@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="BAE8378A-F14B-8A9F-068C-6D9A2E79D40C" containerWithKeyObject="A892AB3B-A015-0E86-7014-A8591B174AD5" localFKIndex="FDCDDD74-F689-A457-2840-D3885F9925F9" name="FK_PARTY_WAIT_QUEUE_ID">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>FK_PARTY_WAIT_QUEUE_ID</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 17:35:02 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<importedID>918E0010-A7BA-6C59-AF5C-8CF5E242274E</importedID>
+<referredTableLongName>STUDENT.WAITQUEUE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>55A5CB60-9B7A-3B6E-D810-8D26C1981A66</referredTableID>
+<keyObject>E9C847A8-4A52-0135-305C-0525A735D999</keyObject>
+<referredKeyID>E9C847A8-4A52-0135-305C-0525A735D999</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

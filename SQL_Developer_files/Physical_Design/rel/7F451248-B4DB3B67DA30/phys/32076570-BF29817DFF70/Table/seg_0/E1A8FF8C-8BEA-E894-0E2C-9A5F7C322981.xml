@@ -1,0 +1,50 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="CUSTOMERIDENTIFICATION" directorySegmentName="seg_0" id="E1A8FF8C-8BEA-E894-0E2C-9A5F7C322981">
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 23:13:04 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<schemaObject>2BEDCAEA-DB4C-2A97-5DE1-DDB109EF3B56</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="DATE_OF_BIRTH" id="2B04E55F-E04F-2B93-8338-01AE1F68FBE5">
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 23:13:04 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LAST_NAME" id="3B3EE588-0F1C-545E-7129-4876C24FA6BC">
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 23:13:04 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_NUMBER" id="59D011FF-2418-4524-D2DE-9F9A6F1BC219">
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 23:13:04 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FIRST_NAME" id="E0FA87CE-DC10-5AC5-E3B2-08CEE2ABEA59">
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 23:13:04 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_CUSTOMER_ID" id="CB9C5DBE-9D1C-3F7B-E56C-2E7F48EA9868">
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 23:13:04 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<schemaObject>2BEDCAEA-DB4C-2A97-5DE1-DDB109EF3B56</schemaObject>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_CUSTOMER_ID" id="1446B39E-421C-9D35-04DA-2B3D5C5EBF04">
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 23:13:04 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

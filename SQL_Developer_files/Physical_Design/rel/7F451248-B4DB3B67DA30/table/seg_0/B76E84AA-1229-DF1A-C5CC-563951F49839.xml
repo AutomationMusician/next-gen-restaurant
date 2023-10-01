@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B76E84AA-1229-DF1A-C5CC-563951F49839" schemaObject="2BEDCAEA-DB4C-2A97-5DE1-DDB109EF3B56" name="CUSTOMERCONTACTINFO">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>CUSTOMERCONTACTINFO</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 17:35:02 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<importedID>AB3124D7-96BB-C862-7862-D0D28620998A</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PHONE_NUMBER" id="C2DD2AEE-54A3-DE94-31C8-6028AFEC81C1">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>CUSTOMERCONTACTINFO</sourceObjSchema>
+<sourceObjName>PHONE_NUMBER</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 17:35:02 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<importedID>7B2C86D6-63DD-16C5-6840-4ECE40133489</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="8FD303B3-032F-E2F6-1F5A-F920E71EAA8A">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>CUSTOMERCONTACTINFO</sourceObjSchema>
+<sourceObjName>NAME</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 17:35:02 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<importedID>3B479E62-5BE0-3A04-CC12-911C17CADD34</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>64 BYTE</dataTypeSize>
+<ownDataTypeParameters>64 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1AC6211B-241F-18E2-30BC-85FE6DEEA278" name="PK_CUSTOMER_CONTACT_INFO">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>PK_CUSTOMER_CONTACT_INFO</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 17:35:02 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<importedID>EAA8CFFE-D53F-F713-ED67-170760202149</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C2DD2AEE-54A3-DE94-31C8-6028AFEC81C1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EC49C999-9B2E-0F40-9412-6828D9698223" schemaObject="2BEDCAEA-DB4C-2A97-5DE1-DDB109EF3B56" name="PK_CUSTOMER_CONTACT_INFO">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>PK_CUSTOMER_CONTACT_INFO</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 17:35:02 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<importedID>FCC31A90-386C-47CC-F918-78C68DC018A4</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C2DD2AEE-54A3-DE94-31C8-6028AFEC81C1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

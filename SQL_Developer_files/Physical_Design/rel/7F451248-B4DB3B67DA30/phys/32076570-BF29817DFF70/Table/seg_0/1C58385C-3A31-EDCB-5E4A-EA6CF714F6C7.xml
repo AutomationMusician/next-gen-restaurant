@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="RESERVATION" directorySegmentName="seg_0" id="1C58385C-3A31-EDCB-5E4A-EA6CF714F6C7">
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 23:13:05 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<schemaObject>2BEDCAEA-DB4C-2A97-5DE1-DDB109EF3B56</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>21C25966-C5B7-2243-B228-5BE1E7EFEFB6</segment>
+<tableSpace>2CF33842-BDA1-50F2-4820-29E6918187C0</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="CUSTOMER_PHONE_NUMBER" id="0B3C84D1-012B-287D-1519-8EE745B22EDD">
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 23:13:05 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="RESTAURANT_ID" id="196DED79-4C5A-903E-185A-91ED1EED2023">
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 23:13:05 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TABLE_NAME" id="1B3B823E-7649-61D1-4D87-E5532F94D9F1">
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 23:13:05 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="RESERVATION_DATE_TIME" id="6AEB64BC-602E-272F-F41B-577747D0DD3A">
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 23:13:05 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_RESERVE" id="F063B44C-52AB-0902-6854-F58006D9BF07">
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 23:13:05 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<schemaObject>2BEDCAEA-DB4C-2A97-5DE1-DDB109EF3B56</schemaObject>
+<segment>C6535651-C6D7-5941-EDAB-34B7EA18D2DF</segment>
+<tableSpace>2CF33842-BDA1-50F2-4820-29E6918187C0</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_RESERVE_PHONE_NUMBER" id="1460F738-EE04-9DA9-547C-B5F880A809F4">
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 23:13:06 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_RESERVE_RESTRAUANT_TABLE" id="4F24904E-E2FF-6D89-AE5A-A93A327C7AED">
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 23:13:06 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_RESERVE_RESTRAUANT_ID" id="83C7862D-33B6-0F96-967A-86EFDDFBC39A">
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 23:13:06 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_RESERVE" id="33384723-8507-CC2C-A7DC-D0AB9D7E5847">
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 23:13:05 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<segment>C6535651-C6D7-5941-EDAB-34B7EA18D2DF</segment>
+<tableSpace>2CF33842-BDA1-50F2-4820-29E6918187C0</tableSpace>
+<existingIndex>F063B44C-52AB-0902-6854-F58006D9BF07</existingIndex>
+<indexSegment>C6535651-C6D7-5941-EDAB-34B7EA18D2DF</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

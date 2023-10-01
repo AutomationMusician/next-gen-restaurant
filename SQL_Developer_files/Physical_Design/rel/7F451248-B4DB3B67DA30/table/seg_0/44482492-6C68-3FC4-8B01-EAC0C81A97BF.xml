@@ -1,0 +1,190 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="44482492-6C68-3FC4-8B01-EAC0C81A97BF" schemaObject="2BEDCAEA-DB4C-2A97-5DE1-DDB109EF3B56" name="MENUITEM">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>MENUITEM</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 17:35:02 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<importedID>E3BAB544-27CF-BDA4-9671-50B0D4477EB2</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="9A3B0D42-995B-EFBE-5D74-8705C51619BC">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>MENUITEM</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 17:35:02 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<importedID>75D4DF0B-3E92-F9CB-7370-BB365E23476D</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="2DEA112E-57A4-7836-AA33-A488C3A183CE">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>MENUITEM</sourceObjSchema>
+<sourceObjName>NAME</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 17:35:02 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<importedID>0D8249ED-CF6A-A8F8-A86E-95DBA0C3B826</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 BYTE</dataTypeSize>
+<ownDataTypeParameters>32 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPTION" id="B962CA46-D4B2-E4E3-F1D3-6C1B69B64BDE">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>MENUITEM</sourceObjSchema>
+<sourceObjName>DESCRIPTION</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 17:35:02 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<importedID>3A21A623-8CC6-BFF9-B196-D6D19FC43D72</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>256 BYTE</dataTypeSize>
+<ownDataTypeParameters>256 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRICE" id="39369E93-DC15-F35D-F1B4-E25ACDDD6385">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>MENUITEM</sourceObjSchema>
+<sourceObjName>PRICE</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 17:35:02 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<importedID>83ED7A1C-2C75-9194-1581-FAEF2B10FBDA</importedID>
+<constraintName>POS_PRICE</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="price &gt; 0"/>
+<implementationDef dbType="Oracle Database 11g" definition="price &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CONTAINS_ALCOHOL" id="C81897E9-374A-19D0-AABB-6CA09BA3E8F7">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>MENUITEM</sourceObjSchema>
+<sourceObjName>CONTAINS_ALCOHOL</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 17:35:02 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<importedID>6ADD6150-5988-AC93-A6CB-954E643B0015</importedID>
+<constraintName>CONTAINS_ALCOHOL_Y_N</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="contains_alcohol = &apos;Y&apos; OR contains_alcohol = &apos;N&apos;"/>
+<implementationDef dbType="Oracle Database 11g" definition="contains_alcohol = &apos;Y&apos; OR contains_alcohol = &apos;N&apos;"/>
+</checkConstraint>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="97B88274-F93D-7DC1-EC7B-887C8A5F4973" name="PK_MENU_ITEM">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>PK_MENU_ITEM</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 17:35:02 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<importedID>E034FE23-0406-BA6C-305E-C414E1B1075A</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9A3B0D42-995B-EFBE-5D74-8705C51619BC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0BD605C1-F564-4259-84C2-CBEA4BFB6DD3" name="U_DESCRIPTION">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>U_DESCRIPTION</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 17:35:02 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<importedID>397B5545-B3A3-6BA0-3763-AAA77DDAE125</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B962CA46-D4B2-E4E3-F1D3-6C1B69B64BDE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E7DDFAA0-92D9-0096-E13D-E48F7952F96E" name="U_NAME">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>U_NAME</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 17:35:02 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<importedID>03AAE7EC-C7FB-C048-08B7-5D8EA3AFE2EF</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2DEA112E-57A4-7836-AA33-A488C3A183CE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DABB00C2-B1D4-EAAF-F217-522EB979A86A" schemaObject="2BEDCAEA-DB4C-2A97-5DE1-DDB109EF3B56" name="PK_MENU_ITEM">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>PK_MENU_ITEM</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 17:35:02 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<importedID>EC0230C7-78FD-2D9B-CF8F-01508C9D98F5</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9A3B0D42-995B-EFBE-5D74-8705C51619BC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C4CA0A14-2AB7-4595-C3B5-B1E10D95400C" schemaObject="2BEDCAEA-DB4C-2A97-5DE1-DDB109EF3B56" name="U_DESCRIPTION">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>U_DESCRIPTION</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 17:35:02 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<importedID>1B3C4206-BEB0-2319-A7C9-2F57E9F7E736</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B962CA46-D4B2-E4E3-F1D3-6C1B69B64BDE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="04135F90-BFAD-B2E3-FB48-96D3C547C766" schemaObject="2BEDCAEA-DB4C-2A97-5DE1-DDB109EF3B56" name="U_NAME">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>U_NAME</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 17:35:02 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<importedID>62F40962-96B7-3A63-6B0C-C66D67CBBDCD</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2DEA112E-57A4-7836-AA33-A488C3A183CE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

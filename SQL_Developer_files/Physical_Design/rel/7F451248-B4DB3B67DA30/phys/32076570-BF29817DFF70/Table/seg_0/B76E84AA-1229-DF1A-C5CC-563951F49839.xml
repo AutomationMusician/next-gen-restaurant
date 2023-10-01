@@ -1,0 +1,40 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="CUSTOMERCONTACTINFO" directorySegmentName="seg_0" id="B76E84AA-1229-DF1A-C5CC-563951F49839">
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 23:13:04 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<schemaObject>2BEDCAEA-DB4C-2A97-5DE1-DDB109EF3B56</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="NAME" id="8FD303B3-032F-E2F6-1F5A-F920E71EAA8A">
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 23:13:04 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PHONE_NUMBER" id="C2DD2AEE-54A3-DE94-31C8-6028AFEC81C1">
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 23:13:04 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_CUSTOMER_CONTACT_INFO" id="EC49C999-9B2E-0F40-9412-6828D9698223">
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 23:13:04 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<schemaObject>2BEDCAEA-DB4C-2A97-5DE1-DDB109EF3B56</schemaObject>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_CUSTOMER_CONTACT_INFO" id="1AC6211B-241F-18E2-30BC-85FE6DEEA278">
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-10-01 23:13:04 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>
