@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="49DAEEC5-784B-AA7A-F89E-A2DD088DF7E8" schemaObject="5A85C4EB-79EC-4419-1261-69C6A4ECAA94" name="ROLEMAPPING">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>ROLEMAPPING</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-09-26 01:32:12 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="STAFF_ID" id="7ECD6836-C02F-3DBE-2C20-FE1A86720FF8">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>ROLEMAPPING</sourceObjSchema>
+<sourceObjName>STAFF_ID</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-09-26 01:32:12 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D76E24D0-330C-2D9B-5D23-CA05E580672B" referredColumn="7D3F865A-5C22-8F4D-8319-B4664881D14E"/>
+</associations>
+</Column>
+<Column name="ROLE_NAME" id="447339C2-AAD6-42DE-FC40-F2F876AEBFB6">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>ROLEMAPPING</sourceObjSchema>
+<sourceObjName>ROLE_NAME</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-09-26 01:32:12 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 BYTE</dataTypeSize>
+<ownDataTypeParameters>32 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2FE5AA68-8338-AC06-C2C8-AD9201B8B059" name="PK_ROLE_MAPPING">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>PK_ROLE_MAPPING</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-09-26 01:32:12 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7ECD6836-C02F-3DBE-2C20-FE1A86720FF8"/>
+<colUsage columnID="447339C2-AAD6-42DE-FC40-F2F876AEBFB6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A5769E98-2DCE-9746-9C62-C0CEFE0E1CF7" schemaObject="5A85C4EB-79EC-4419-1261-69C6A4ECAA94" name="PK_ROLE_MAPPING">
+<sourceConnName>INSC521</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>PK_ROLE_MAPPING</sourceObjName>
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-09-26 01:32:12 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7ECD6836-C02F-3DBE-2C20-FE1A86720FF8"/>
+<colUsage columnID="447339C2-AAD6-42DE-FC40-F2F876AEBFB6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="62A3FA70-6DEF-9FFE-CFAE-D398E088C60B" name="FK_STAFF_ID">
+<createdBy>joshuafishman</createdBy>
+<createdTime>2023-09-26 01:32:12 UTC</createdTime>
+<ownerDesignName>Physical_Design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7ECD6836-C02F-3DBE-2C20-FE1A86720FF8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
